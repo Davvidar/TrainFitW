@@ -9,6 +9,7 @@ import Accordion from '../components/Accordion/Accordion';
 import AppPromotion from '../components/AppPromotion/AppPromotion';
 import HeroSection from '../components/HeroSection/HeroSection'
 import '../App.css';
+import ImageZoom from '../components/ImageZoom/ImageZoom';
 export const Home = () => {
   return (
     <>
@@ -76,7 +77,12 @@ export const Home = () => {
           <AppPromotion />
           {/* Otros componentes */}
         </div>
+        <div className="text-center mb-5" >
+          <h1>Calculadoras</h1>
+          <h5>También puedes hacer uso de nuestras calculadoras para medir tus calorías y tu repetición máxima</h5>
+        </div>
       </Container>
+        <ImageZoom className="border"/>
     </>
   )
 }
