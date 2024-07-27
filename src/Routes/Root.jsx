@@ -9,6 +9,9 @@ export const Root = () => {
     <>
        <NavigationBar /> 
       {/* <HeroSection /> */}
+      <div className="mt-5"></div>
+      
+
       <Outlet />
       <Footer />
     </>
