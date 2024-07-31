@@ -16,8 +16,8 @@ export const RmCalculator = () => {
         <div className="col-lg-12 col-12">
           <p className="me-4" >
             El calculo se fundamenta en el conteo de repeticiones que se
-            pueden hacer al levantar un peso hasta que se llegue al fallo. Si
-            no se superan las 12 repeticiones, esta estimación es bastante
+            pueden hacer al levantar un peso hasta que se llegue al fallo. <strong className="text-warning">Si
+            no se superan las 12 repeticiones</strong>, esta estimación es bastante
             precisa y útil. La formula utilizada es la de Brzycki
           </p>
         </div>
@@ -25,6 +25,9 @@ export const RmCalculator = () => {
         </Col>
         <Col></Col>
       </Row>
+      <div className="additional-calculator">
+          <h3>También puedes utilizar nuestra <a href="/CalculadoraRm">Calculadora de RM</a></h3>
+        </div>
 
 
 

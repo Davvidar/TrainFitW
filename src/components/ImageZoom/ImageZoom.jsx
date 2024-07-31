@@ -12,7 +12,7 @@ const ImageZoom = () => {
           <h1 className="title">Calculadora Kcal</h1>
           <div className="description">
             <p>Con esta calculadora podrás hacer una estimación de tu ingesta de kcal diarias.</p>
-            <button onClick={() => window.location.href = "https://www.apple.com/app-store/"}>Ir a la calculadora</button>
+            <button onClick={() => window.location.href = "/CalculadoraKcal"}>Ir a la calculadora</button>
           </div>
         </div>
       </div>
@@ -22,7 +22,7 @@ const ImageZoom = () => {
           <h1 className="title">Calculadora RM</h1>
           <div className="description">
             <p>Con esta calculadora podrás hacer una estimación de tu RM (repetición maxima) en cualquier ejercicio.</p>
-            <button onClick={() => window.location.href = "https://www.google.com"}>Ir a la calculadora</button>
+            <button onClick={() => window.location.href = "/CalculadoraRm"}>Ir a la calculadora</button>
           </div>
         </div>
       </div>
