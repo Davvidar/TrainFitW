@@ -21,7 +21,11 @@ const CalculatorSelection = () => {
                     </div>
                 </div>
             </div> */}
-            <div className="mb-5"></div>
+            <div className="mt-5">
+                <h1 className="text-center  mt-5">Nuestras calculadoras</h1>
+                <p className="text-center">Elija una calculadora para comenzar</p>
+
+            </div>
             <br />
             <ImageZoom className="border-top"></ImageZoom>
         </>

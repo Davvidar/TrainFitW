@@ -27,7 +27,7 @@ const Rm = () => {
         {error && <div className="breadcrumb-error">{error}</div>}
         {rm !== null && (
           <div className="result">
-            <h4 className="border-top pt-4">Tu RM aproximado es:</h4>
+            <h4>Tu RM aproximado es:</h4>
             <h1 ><strong className="text-warning"> {rm} kg </strong></h1>
           </div>
         )}

@@ -10,7 +10,17 @@ import AppPromotion from '../components/AppPromotion/AppPromotion';
 import HeroSection from '../components/HeroSection/HeroSection'
 import '../App.css';
 import ImageZoom from '../components/ImageZoom/ImageZoom';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
 export const Home = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 300, // duración de la animación en ms
+      offset: 100,   // desplazamiento desde el fondo del viewport en px
+      easing: 'ease-in-out', // tipo de easing
+    });
+  }, []);
   return (
     <>
     <HeroSection />
@@ -36,23 +46,23 @@ export const Home = () => {
               y más feliz de ti mismo!
             </p>
           </Col>
-          <Col className="col-lg-6 col-12 mt-3 mb-lg-5 text-center">
+          <Col className="col-lg-6 col-12 mt-3 mb-lg-5 text-center" data-aos="fade-up">
 
-            <CarouselMap />
+            <CarouselMap  data-aos="fade-up" />
 
           </Col>
-          <Col className="col-lg-6 col-12 mt-lg-3 mb-lg-5">
+          <Col className="col-lg-6 col-12 mt-lg-3 mb-lg-5"  data-aos="fade-up">
 
 
-            <div className="text-center mt-4 mb-4">
+            <div className="text-center mt-4 mb-4"  data-aos="fade-up">
               <h6 className="">
-                {" "}
+                
                 Algunas de las características principales de la app son:
               </h6>
             </div>
 
 
-            <Accordion />
+            <Accordion/>
           </Col>
         </Row>
 
@@ -63,21 +73,21 @@ export const Home = () => {
         </Row>
       </Container>
 
-      <ParallaxSection />
+      <ParallaxSection/>
       <Container>
         <Row>
           <Col>
-            <div className='m-1'>
+            <div className='m-1' data-aos="fade-up">
               <h2 className="text-center mb-5">¡Todo en una sola aplicación!</h2>
               <ImageAccordion />
             </div>
           </Col>
         </Row>
-        <div className="app">
+        <div className="app" data-aos="fade-up">
           <AppPromotion />
           {/* Otros componentes */}
         </div>
-        <div className="text-center mb-5" >
+        <div className="text-center mb-5"  data-aos="fade-up">
           <h1>Calculadoras</h1>
           <h5>También puedes hacer uso de nuestras calculadoras para medir tus calorías y tu repetición máxima</h5>
         </div>

@@ -26,7 +26,7 @@ export const RmCalculator = () => {
         <Col></Col>
       </Row>
       <div className="additional-calculator">
-          <h3>También puedes utilizar nuestra <a href="/CalculadoraRm">Calculadora de RM</a></h3>
+          <h3>También puedes utilizar nuestra <a href="/CalculadoraKcal">Calculadora de Kcal</a></h3>
         </div>
 
 
