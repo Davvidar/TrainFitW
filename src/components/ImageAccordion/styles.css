@@ -33,10 +33,12 @@
    border-radius: 25px;
    display: flex;
    align-items: flex-end;
-   opacity: 0.6;
-   transition: 0.3s;
+   opacity: 0.8;
+   transition: 0.3s ;
    background: rgba(255, 145, 0, 0.279);
-   filter: blur(2px);
+   filter: blur(1px);
+   border: 2px solid rgb(255, 255, 255);
+   
    
    
  }

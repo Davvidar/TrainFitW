@@ -1,18 +1,24 @@
 .additional-calculator {
     text-align: center;
     margin-top: 20px;
+    padding: 50px;
+
+    border-radius: 3px;
+   
+    border-top: #ffa200 2px solid;
 }
 
 .additional-calculator a {
     color: #ffa200;
     text-decoration: none;
-    transition: transform .2s
+ transition: all 0.3s ease;
+  
+
 
 }
 
 .additional-calculator a:hover {
     text-decoration: underline;
-    transform: scale(1.6);
-    
-    
+
+
 }
