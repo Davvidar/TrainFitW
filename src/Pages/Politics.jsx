@@ -6,46 +6,46 @@ const Politics = () => {
     <Container>
         <div className="row mt-5">
                     <div className="col-12 p-3 m-3 ">
-                        <h2 className="mb-3" data-aos="fade-up">Política y privacidad de TrainFit</h2>
+                        <h2 className="mb-3" >Política y privacidad de TrainFit</h2>
                     </div>
 
                     <div className="col-lg-12 col-12 mt-3 mb-lg-5 d-flex justify-content-center ">
-                        <article className="me-4 p-3" data-aos="fade-up" data-aos-delay="300">
-                            <h5 className="m-2" data-aos="fade-up" data-aos-delay="300">Acerca de TrainFit y esta Política
+                        <article className="me-4 p-3"  data-aos-delay="300">
+                            <h5 className="m-2"  data-aos-delay="300">Acerca de TrainFit y esta Política
                             </h5>
 
-                            <p  data-aos="fade-up" data-aos-delay="300" className= "m-2 fs-6">Esta Política de privacidad explica
+                            <p   data-aos-delay="300" className= "m-2 fs-6">Esta Política de privacidad explica
                                 cuándo
                                 recopilamos información sobre el usuario,
                                 incluida la 'Información personal', qué información recopilamos, por qué la recopilamos,
                                 cómo la utilizamos, con quién la compartimos, dónde se procesa, cómo la gestionamos y
                                 las opciones y los derechos legales del usuario asociados a esta información.</p>
 
-                            <h5 className="m-2" data-aos="fade-up" data-aos-delay="300">Alcance de esta Política</h5>
+                            <h5 className="m-2"  data-aos-delay="300">Alcance de esta Política</h5>
                                
 
-                            <p className="m-2 fs-6" data-aos="fade-up" data-aos-delay=" 300"> TrainFit y sus empresas filiales
+                            <p className="m-2 fs-6"  data-aos-delay=" 300"> TrainFit y sus empresas filiales
                                 controlan la
                                 información recopilada cuando el usuario
                                 interactúa con la aplicación TrainFit a través de nuestros servicios (en lo sucesivo,
                                 los'Servicios').</p>
 
-                            <h5 className="m-2" data-aos="fade-up" data-aos-delay="300">Información que recopilamos o
+                            <h5 className="m-2"  data-aos-delay="300">Información que recopilamos o
                                 recibimos</h5>
 
-                            <h5 className="m-2" data-aos="fade-up" data-aos-delay="300">Qué datos recopilamos acerca del
+                            <h5 className="m-2"  data-aos-delay="300">Qué datos recopilamos acerca del
                                 usuario</h5>
 
-                            <p className="m-2 fs-6" data-aos="fade-up" data-aos-delay=" 300"> Recopilamos y recibimos información
+                            <p className="m-2 fs-6"  data-aos-delay=" 300"> Recopilamos y recibimos información
                                 sobre el
                                 usuario por diferentes medios, como se
                                 describe
                                 a continuación.</p>
-                            <h5 className="m-2" data-aos="fade-up" data-aos-delay="300">Información que nos proporciona
+                            <h5 className="m-2"  data-aos-delay="300">Información que nos proporciona
                                 el usuario</h5>
 
 
-                            <p className="m-2 fs-6" data-aos="fade-up" data-aos-delay=" 300">Recopilamos información que nos
+                            <p className="m-2 fs-6"  data-aos-delay=" 300">Recopilamos información que nos
                                 proporciona
                                 directamente el usuario; por ejemplo, al
                                 introducirla en nuestra aplicación o incluirla en un formulario que nos envíe. Este
@@ -53,8 +53,8 @@ const Politics = () => {
                                 de
                                 recopilación suele producirse a través de procesos como:</p>
 
-                            <ul data-aos="fade-up" data-aos-delay="300">
-                                <li data-aos="fade-up" data-aos-delay="300">
+                            <ul  data-aos-delay="300">
+                                <li  data-aos-delay="300">
                                     <p className="m-2 fs-6">Procesos de registro o creación de  una cuenta en TrainFit, en los que
                                         se pide
                                         al
@@ -62,7 +62,7 @@ const Politics = () => {
                                         electrónico, fecha de
                                         nacimiento y preferencias de ejercicio y nutrición.</p>
                                 </li>
-                                <li data-aos="fade-up" data-aos-delay="300">
+                                <li  data-aos-delay="300">
                                     <p className="m-2 fs-6">Procesos de asistencia técnica y atención al cliente, en los que
                                         podemos
                                         pedir
@@ -73,7 +73,7 @@ const Politics = () => {
                                         que
                                         se ha puesto en contacto con nosotros.</p>
                                 </li>
-                                <li data-aos="fade-up" data-aos-delay="300">
+                                <li  data-aos-delay="300">
                                     <p className="m-2 fs-6">Otros procesos empresariales, en los que podemos pedir al usuario que
                                         proporcione
                                         información como el nombre, la dirección de correo electrónico y
@@ -88,9 +88,9 @@ const Politics = () => {
 
 
 
-                            <h5 className="m-2" data-aos="fade-up" data-aos-delay="300">Recopilación automática de
+                            <h5 className="m-2"  data-aos-delay="300">Recopilación automática de
                                 información</h5>
-                            <p className="m-2 fs-6" data-aos="fade-up" data-aos-delay=" 300">También podemos recopilar de forma
+                            <p className="m-2 fs-6"  data-aos-delay=" 300">También podemos recopilar de forma
                                 automática
                                 o pasiva información sobre el uso que
                                 haga
@@ -98,11 +98,11 @@ const Politics = () => {
                                 usuario de nuestra aplicación; se deben consultar las subsecciones siguientes para
                                 obtener
                                 una lista de las categorías de fuentes de dicha información.</p>
-                            <p className="m-2 fs-6" data-aos="fade-up" data-aos-delay=" 300">La información que recopilamos de los
+                            <p className="m-2 fs-6"  data-aos-delay=" 300">La información que recopilamos de los
                                 dispositivos puede incluir:</p>
 
 
-                            <p className="m-2 fs-6" data-aos="fade-up" data-aos-delay=" 300"> Cada vez que el usuario utiliza
+                            <p className="m-2 fs-6"  data-aos-delay=" 300"> Cada vez que el usuario utiliza
                                 TrainFit,
                                 podemos registrar la actividad del usuario
                                 en nuestros servidores. Por ejemplo, podemos recibir identificadores del
@@ -110,18 +110,18 @@ const Politics = () => {
                                 información sobre los ejercicios realizados y las preferencias de alimentación
                                 introducidas.</p>
 
-                            <h4 className="m-2" data-aos="fade-up" data-aos-delay="300">Uso de la información</h4>
+                            <h4 className="m-2"  data-aos-delay="300">Uso de la información</h4>
 
-                            <h5 className="m-2" data-aos="fade-up" data-aos-delay="300"> Cómo usamos los datos que
+                            <h5 className="m-2"  data-aos-delay="300"> Cómo usamos los datos que
                                 recopilamos</h5>
 
-                            <p className="m-2 fs-6" data-aos="fade-up" data-aos-delay=" 300">En esta sección se explica cómo
+                            <p className="m-2 fs-6"  data-aos-delay=" 300">En esta sección se explica cómo
                                 utilizamos la
                                 información personal que recopilamos
                                 sobre el usuario.
                             </p>
 
-                            <p className="m-2 fs-6" data-aos="fade-up" data-aos-delay=" 300"> Utilizaremos la información personal
+                            <p className="m-2 fs-6"  data-aos-delay=" 300"> Utilizaremos la información personal
                                 del
                                 usuario únicamente por determinados motivos
                                 específicos y solo cuando tengamos la base legal para hacerlo. Las bases legales que
@@ -129,21 +129,21 @@ const Politics = () => {
                                 respaldan dependen del tipo de relación que tengamos con el usuario y de cómo
                                 interactuemos
                                 con él.</p>
-                            <h6 className="m-2" data-aos="fade-up" data-aos-delay="300">Entre estos fines, se incluyen:</h6>
-                            <ul data-aos="fade-up" data-aos-delay="300">
+                            <h6 className="m-2"  data-aos-delay="300">Entre estos fines, se incluyen:</h6>
+                            <ul  data-aos-delay="300">
 
-                                <li data-aos="fade-up" data-aos-delay="300">
+                                <li  data-aos-delay="300">
                                     <p className="m-2 fs-6">Proporcionar nuestros productos y servicios al usuario, como
                                         entrenamientos
                                         personalizados y planes de alimentación.</p>
                                 </li>
-                                <li data-aos="fade-up" data-aos-delay="300">
+                                <li  data-aos-delay="300">
                                     <p className="m-2 fs-6">Mejorar nuestros productos y servicios, como analizar los datos de
                                         ejercicio
                                         y
                                         nutrición para ofrecer recomendaciones más precisas.</p>
                                 </li>
-                                <li data-aos="fade-up" data-aos-delay="300">
+                                <li  data-aos-delay="300">
                                     <p className="m-2 fs-6">Detectar y prevenir el uso no autorizado de nuestra aplicación y
                                         garantizar
                                         la
@@ -157,26 +157,26 @@ const Politics = () => {
 
 
 
-                            <h4 className="m-2" data-aos="fade-up" data-aos-delay="300"> Intercambio y transferencias de
+                            <h4 className="m-2"  data-aos-delay="300"> Intercambio y transferencias de
                                 información</h4>
 
-                            <h6 className="m-2" data-aos="fade-up" data-aos-delay="300"> Dónde y con quién compartimos
+                            <h6 className="m-2"  data-aos-delay="300"> Dónde y con quién compartimos
                                 los datos del usuario</h6>
 
-                            <p className="m-2 fs-6" data-aos="fade-up" data-aos-delay=" 300">En esta sección se explica cómo
+                            <p className="m-2 fs-6"  data-aos-delay=" 300">En esta sección se explica cómo
                                 podemos
                                 compartir la información que recopilamos con
                                 terceros que nos prestan servicios o proporcionan los datos que utiliza el usuario
                                 en TrainFit. No aceptamos ni aceptaremos dinero a cambio de compartir información
                                 personal.
                             </p>
-                            <h6 className="m-2" data-aos="fade-up" data-aos-delay="300">Podemos compartir la información del
+                            <h6 className="m-2"  data-aos-delay="300">Podemos compartir la información del
                                 usuario
                                 con los siguientes destinatarios y para
                                 los
                                 siguientes fines:</h6>
-                            <ul data-aos="fade-up" data-aos-delay="300">
-                                <li data-aos="fade-up" data-aos-delay="300">
+                            <ul  data-aos-delay="300">
+                                <li  data-aos-delay="300">
                                     <p className="m-2 fs-6"> Proveedores de servicios: compartimos información con proveedores de
                                         servicios
                                         de
@@ -187,13 +187,13 @@ const Politics = () => {
                                         datos de
                                         ejercicio y nutrición.</p>
                                 </li>
-                                <li data-aos="fade-up" data-aos-delay="300">
+                                <li  data-aos-delay="300">
                                     <p className="m-2 fs-6">Socios: podemos compartir información con socios que ofrecen
                                         servicios
                                         adicionales
                                         relacionados con el fitness y la nutrición.</p>
                                 </li>
-                                <li data-aos="fade-up" data-aos-delay="300">
+                                <li  data-aos-delay="300">
                                     <p className="m-2 fs-6">Otros usuarios: cuando el usuario interactúa con otros usuarios
                                         dentro de
                                         TrainFit,
@@ -208,13 +208,13 @@ const Politics = () => {
 
 
 
-                            <h4 className="m-2" data-aos="fade-up" data-aos-delay="300">Gestión de la información y
+                            <h4 className="m-2"  data-aos-delay="300">Gestión de la información y
                                 opciones del usuario</h4>
-                            <h6 className="m-2" data-aos="fade-up" data-aos-delay="300">Cómo almacenamos los datos y los
+                            <h6 className="m-2"  data-aos-delay="300">Cómo almacenamos los datos y los
                                 derechos del usuario</h6>
 
 
-                            <p className="m-2 fs-6" data-aos="fade-up" data-aos-delay=" 300"> En TrainFit tratamos de mantener
+                            <p className="m-2 fs-6"  data-aos-delay=" 300"> En TrainFit tratamos de mantener
                                 medidas de
                                 seguridad adecuadas para proteger la
                                 información
@@ -223,7 +223,7 @@ const Politics = () => {
                                 garantizar que el usuario tenga opciones sobre cómo se recopila, utiliza, almacena y
                                 comparte su información.</p>
 
-                            <p className="m-2 fs-6" data-aos="fade-up" data-aos-delay=" 300"> El usuario puede consultar,
+                            <p className="m-2 fs-6"  data-aos-delay=" 300"> El usuario puede consultar,
                                 modificar o
                                 eliminar parte de su información desde los
                                 ajustes
@@ -233,18 +233,18 @@ const Politics = () => {
                                 aplicación
                                 TrainFit.</p>
 
-                            <h4 className="m-2" data-aos="fade-up" data-aos-delay="300">Quejas</h4>
+                            <h4 className="m-2"  data-aos-delay="300">Quejas</h4>
 
-                            <p className="m-2 fs-6"  data-aos="fade-up" data-aos-delay= "300">Si el usuario tiene alguna duda sobre nuestra
+                            <p className="m-2 fs-6"   data-aos-delay= "300">Si el usuario tiene alguna duda sobre nuestra
                                 gestión de su información personal,
                                 puede
                                 ponerse en contacto con nosotros a través de los métodos proporcionados en la
                                 aplicación
                                 TrainFit.</p>
 
-                            <h4 className="m-2" data-aos="fade-up" data-aos-delay="300">Cambios en esta Política</h4>
+                            <h4 className="m-2"  data-aos-delay="300">Cambios en esta Política</h4>
 
-                            <p className="m-2 fs-6"  data-aos="fade-up" data-aos-delay= "300"> Podemos revisar esta Política de privacidad
+                            <p className="m-2 fs-6"   data-aos-delay= "300"> Podemos revisar esta Política de privacidad
                                 en cualquier momento y actualizaremos
                                 dicha
                                 Política con cualquier revisión. Si sigue utilizando TrainFit después de la entrada

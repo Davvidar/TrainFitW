@@ -8,6 +8,8 @@ import ContactPage from '../Pages/ContactPage';
 import CalculatorSelection from '../Pages/CalculatorSelection';
 import TermsConditions from '../Pages/TermsConditions';
 import Politics from '../Pages/Politics';
+import AboutUs from '../Pages/AboutUs/AboutUs';
+import FaqsPage from '../Pages/FaqsPage';
 
 const router = createBrowserRouter([
 {
@@ -39,8 +41,16 @@ const router = createBrowserRouter([
       element: <TermsConditions />,
     },
     {
-      path: "/Politicas",
+      path: "/politicas",
       element: <Politics />,
+    },
+    {
+      path: "/SobreNosotros",
+      element: <AboutUs />,
+    },
+    {
+      path: "/FAQs",
+      element: <FaqsPage />,
     }
   ],
 }

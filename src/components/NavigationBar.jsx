@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './HeroSection/HeroSection.scss';
 
+
 const NavigationBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -49,9 +50,9 @@ const NavigationBar = () => {
         <div className={` menu ${isMenuOpen ? 'is-active' : ''}`} id="menu">
           <ul className="menu-inner ps-0">
             <li className="menu-item"><a href="/" className="menu-link" onClick={closeMenu}>Inicio</a></li>
-            <li className="menu-item"><a href="" className="menu-link" onClick={closeMenu}>Nosotros</a></li>
-            <li className="menu-item"><a href="" className="menu-link" onClick={closeMenu}>Legal</a></li>
             <li className="menu-item"><a href="/calculadoras" className="menu-link" onClick={closeMenu}>Calculadoras</a></li>
+            <li className="menu-item"><a href="/SobreNosotros" className="menu-link" onClick={closeMenu}>Nosotros</a></li>
+            <li className="menu-item"><a href="" className="menu-link" onClick={closeMenu}>Legal</a></li>
           </ul>
         </div>
         <a href="/contacto" className="menu-block">Contacto</a>

@@ -1,0 +1,39 @@
+.infinite-cards-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .infinite-cards {
+    display: flex;
+    width: max-content;
+    animation: scroll 35s linear infinite;
+  }
+  
+  .card {
+    flex: 0 0 350px; /* Adjusted size */
+    margin: 20px;
+    padding: 40px; /* Adjusted padding */
+    background: rgba(255, 255, 255, 0);
+    border: none;
+    text-align: center;
+    color: #fff;
+    transition: transform 0.3s ease;
+    transform: scale(1.18);
+    
+  }
+ 
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-300px * 5 - 40px * 5 - 20px * 5));
+    }
+  }
+  

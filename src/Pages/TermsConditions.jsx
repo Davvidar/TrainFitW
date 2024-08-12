@@ -1,6 +1,6 @@
 import React from 'react'
 import "../components/Animation.scss"
-import { useInView } from 'react-intersection-observer';
+
 import { Container } from 'react-bootstrap';
 
 const TermsConditions = () => {
@@ -8,7 +8,7 @@ const TermsConditions = () => {
        <>
         <Container >
             
-            <div className="row mt-5">
+            <div className="row ">
                 <div className="col-12 p-3 m-3 ">
                     <h2 className="mb-3">Términos y condiciones de TrainFit</h2>
                 </div>
