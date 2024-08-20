@@ -23,11 +23,11 @@ export const Home = () => {
   }, []);
   return (
     <>
-    <HeroSection />
+      <HeroSection />
       <Container>
         <Row>
-          <Col>
-            <h2 className="mb-3 mt-5" data-aos="fade-up ">
+          <Col id='app'>
+            <h2 className="mb-3 mt-5" data-aos="fade-up" >
               La app
             </h2>
           </Col>
@@ -48,21 +48,21 @@ export const Home = () => {
           </Col>
           <Col className="col-lg-6 col-12 mt-3 mb-lg-5 text-center" data-aos="fade-up">
 
-            <CarouselMap  data-aos="fade-up" />
+            <CarouselMap data-aos="fade-up" />
 
           </Col>
-          <Col className="col-lg-6 col-12 mt-lg-3 mb-lg-5"  data-aos="fade-up">
+          <Col className="col-lg-6 col-12 mt-lg-3 mb-lg-5" data-aos="fade-up">
 
 
-            <div className="text-center mt-4 mb-4"  data-aos="fade-up">
+            <div className="text-center mt-4 mb-4" data-aos="fade-up">
               <h6 className="">
-                
+
                 Algunas de las características principales de la app son:
               </h6>
             </div>
 
 
-            <Accordion/>
+            <Accordion />
           </Col>
         </Row>
 
@@ -73,8 +73,15 @@ export const Home = () => {
         </Row>
       </Container>
 
-      <ParallaxSection/>
+      <ParallaxSection />
       <Container>
+        <Row>
+          <Col>
+            <div className='mt-3' data-aos="fade-up">
+              <Features />
+            </div>
+          </Col>
+        </Row>
         <Row>
           <Col>
             <div className='m-1' data-aos="fade-up">
@@ -83,16 +90,16 @@ export const Home = () => {
             </div>
           </Col>
         </Row>
-        <div className="app" data-aos="fade-up">
+
+        <div className="app" data-aos="fade-up" id='descarga'>
           <AppPromotion />
-          {/* Otros componentes */}
         </div>
-        <div className="text-center mb-5"  data-aos="fade-up">
+        <div id='calculadoras' className="text-center mb-5" data-aos="fade-up">
           <h1>Calculadoras</h1>
           <h5>También puedes hacer uso de nuestras calculadoras para medir tus calorías y tu repetición máxima</h5>
         </div>
       </Container>
-        <ImageZoom className="border"/>
+      <ImageZoom className="border" />
     </>
   )
 }

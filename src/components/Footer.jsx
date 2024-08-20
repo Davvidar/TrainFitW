@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -15,27 +16,22 @@ const Footer = () => {
                 </a>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 link-warning text-light">
+                <a href="#app" className="nav-link p-0 link-warning text-light">
                   La app
                 </a>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 link-warning text-light">
-                  Uso
-                </a>
-              </li>
-              <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 link-warning text-light">
-                  Calculadoras
-                </a>
-              </li>
-              <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 link-warning text-light">
+                <a href="#descarga" className="nav-link p-0 link-warning text-light">
                   Descarga
                 </a>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 link-warning text-light">
+                <a href="#calculadoras" className="nav-link p-0 link-warning text-light">
+                  Calculadoras
+                </a>
+              </li>
+              <li className="nav-item mb-2">
+                <a  href="/contacto" className="nav-link p-0 link-warning text-light">
                   Contacto
                 </a>
               </li>
@@ -45,24 +41,24 @@ const Footer = () => {
             <h5 className='text-light'>Legal</h5>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
-                <a href="/terminosycondiciones" className="nav-link p-0 link-warning text-light">
+                <Link to="/terminosycondiciones" className="nav-link p-0 link-warning text-light">
                   Térmninos y condiciones
-                </a>
+                </Link>
               </li>
               <li className="nav-item mb-2">
-                <a href="/politicas" className="nav-link p-0 link-warning text-light">
+                <Link to="/politicas" className="nav-link p-0 link-warning text-light">
                   Políticas
-                </a>
+                </Link>
               </li>
               <li className="nav-item mb-2">
-                <a href="/SobreNosotros" className="nav-link p-0 link-warning text-light">
+                <Link to="/SobreNosotros" className="nav-link p-0 link-warning text-light">
                   Sobre nosotros
-                </a>
+                </Link>
               </li>
               <li className="nav-item mb-2">
-                <a href="/FAQs" className="nav-link p-0 link-warning text-light">
+                <Link to="/FAQs" className="nav-link p-0 link-warning text-light">
                   FAQs
-                </a>
+                </Link>
               </li>
 
             </ul>

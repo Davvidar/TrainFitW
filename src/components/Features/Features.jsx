@@ -4,16 +4,16 @@ import './Features.css';
 function Features() {
   const features = [
     {
-      title: "Fácil de Usar",
-      description: "Interfaz intuitiva y amigable para todos los usuarios.",
+      title: "Centralizado",
+      description: "¡Encuentra todo lo que necesitas para tu nutrición y entrenamiento en un único lugar! Simplifica tu vida y maximiza tus resultados con nuestra Trainfit",
     },
     {
-      title: "Segura",
-      description: "Tus datos están protegidos con la máxima seguridad.",
+      title: "Personalizable",
+      description: "Con TrainFit, personaliza por completo tus calorías. ¡Ajusta tu ingesta calórica según tus objetivos y necesidades individuales! Simplifica y maximiza tus resultados.",
     },
     {
-      title: "Eficiente",
-      description: "Optimiza tu tiempo y alcanza tus metas más rápido.",
+      title: "Selección de ejercicios",
+      description: "Selecciona cuidadosamente cada ejercicio según tus necesidades y preferencias. Con nuestra Trainfit, tú decides.",
     }
   ];
 
