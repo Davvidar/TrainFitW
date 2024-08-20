@@ -42,7 +42,7 @@ const NavigationBar = () => {
   return (
     <header className={`header ${isScrolled ? 'on-scroll' : ''}`} id="header">
       <nav className="navbar container">
-        <a href="/" className="brand"><strong>Train</strong><strong className='text-warning'>Fit</strong></a>
+        <Link to="/" className="brand"><strong>Train</strong><strong className='text-warning'>Fit</strong></Link>
         <div className={`burger ${isMenuOpen ? 'is-active' : ''}`} id="burger" onClick={toggleMenu}>
           <span className="burger-line"></span>
           <span className="burger-line"></span>
@@ -56,7 +56,7 @@ const NavigationBar = () => {
             <li className="menu-item"><Link to="" className="menu-link" onClick={closeMenu}>Legal</Link></li>
           </ul>
         </div>
-        <a href="/contacto" className="menu-block">Contacto</a>
+        <Link to="/contacto" className="menu-block">Contacto</Link>
       </nav>
     </header>
   );
