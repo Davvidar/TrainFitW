@@ -10,6 +10,7 @@ import TermsConditions from '../Pages/TermsConditions';
 import Politics from '../Pages/Politics';
 import AboutUs from '../Pages/AboutUs/AboutUs';
 import FaqsPage from '../Pages/FaqsPage';
+import NotFound from '../Pages/NotFound';
 
 const router = createBrowserRouter([
 {
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
     {
       path: "/FAQs",
       element: <FaqsPage />,
+    },
+    {
+      path: "*",
+      element: <NotFound />,
     }
   ],
 }
