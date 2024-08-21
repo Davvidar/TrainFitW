@@ -22,11 +22,11 @@ const router = createBrowserRouter([
       element: <Home />,
     },
     {
-      path: "/CalculadoraKcal",
+      path: "/calculadoras/CalculadoraKcal",
       element: <KcalCalculator />,
     },
     {
-      path: "/CalculadoraRm",
+      path: "/calculadoras/CalculadoraRm",
       element: <RmCalculator />,
     },
     {

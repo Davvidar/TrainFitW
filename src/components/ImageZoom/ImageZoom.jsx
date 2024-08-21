@@ -2,9 +2,19 @@ import React from 'react';
 import fondo from '../../assets/images/fondo.png';
 import fondo2 from '../../assets/images/fondo2.png';
 import './ImageZoom.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const ImageZoom = () => {
+  const navigate = useNavigate();
+
+  const handleButtonRm = () => {
+    navigate('/calculadoras/calculadoraRm');
+  };
+
+  const handleButtonKcal = () => {
+    navigate('/calculadoras/calculadoraKcal');
+  };
+
   return (
     <div className="image-zoom-div border">
       <div className="image-container">
@@ -13,7 +23,7 @@ const ImageZoom = () => {
           <h1 className="title">Calculadora Kcal</h1>
           <div className="description">
             <p>Con esta calculadora podrás hacer una estimación de tu ingesta de kcal diarias.</p>
-            <button><Link to="/calculadoraKcal">Ir a la calculadora </Link></button>
+            <button onClick={handleButtonKcal}>Ir a la calculadora </button>
           </div>
         </div>
       </div>
@@ -23,7 +33,7 @@ const ImageZoom = () => {
           <h1 className="title">Calculadora RM</h1>
           <div className="description">
             <p>Con esta calculadora podrás hacer una estimación de tu RM (repetición maxima) en cualquier ejercicio.</p>
-            <button> <Link to="/calculadoraRm">Ir a la calculadora </Link></button>
+            <button onClick={handleButtonRm}>Ir a la calculadora </button>
           </div>
         </div>
       </div>

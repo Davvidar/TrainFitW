@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './HeroSection/HeroSection.scss';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 
 const NavigationBar = () => {
@@ -50,10 +50,10 @@ const NavigationBar = () => {
         </div>
         <div className={` menu ${isMenuOpen ? 'is-active' : ''}`} id="menu">
           <ul className="menu-inner ps-0">
-            <li className="menu-item"><Link to="/" className="menu-link" onClick={closeMenu}>Inicio</Link></li>
-            <li className="menu-item"><Link to="/calculadoras" className="menu-link" onClick={closeMenu}>Calculadoras</Link></li>
-            <li className="menu-item"><Link to="/SobreNosotros" className="menu-link" onClick={closeMenu}>Nosotros</Link></li>
-            <li className="menu-item"><Link to="" className="menu-link" onClick={closeMenu}>Legal</Link></li>
+            <li className="menu-item p-1"><NavLink to="/" className="menu-link rounded p-1" style={({ isActive }) => { return { backgroundColor: isActive ? 'orange' : ''  }; }} onClick={closeMenu}>Inicio</NavLink></li>
+            <li className="menu-item p-1"><NavLink to="/calculadoras"  style={({ isActive }) => { return { backgroundColor: isActive ? 'orange' : ''  }; }}  className="menu-link rounded p-1" onClick={closeMenu}>Calculadoras</NavLink></li>
+            <li className="menu-item p-1"><NavLink to="/SobreNosotros"  style={({ isActive }) => { return { backgroundColor: isActive ? 'orange' : ''  }; }}className="menu-link p-1 rounded" onClick={closeMenu}>Nosotros</NavLink></li>
+{/*             <li className="menu-item p-1"><NavLink to=""  style={({ isActive }) => { return { backgroundColor: isActive ? 'orange' : ''  }; }}className="menu-link" onClick={closeMenu}>Legal</NavLink></li> */}
           </ul>
         </div>
         <Link to="/contacto" className="menu-block">Contacto</Link>

@@ -39,7 +39,7 @@ export const RmCalculator = () => {
 
       <div className="additional-calculator" >
           <h5 data-aos="fade-up">También puedes utilizar nuestra</h5>
-          <h1 data-aos="fade-up"><a href="/CalculadoraKcal" id="style-1">Calculadora de Kcal</a> </h1>
+          <h1 data-aos="fade-up"><a href="/calculadoras/CalculadoraKcal" id="style-1">Calculadora de Kcal</a> </h1>
         </div>
 
 
