@@ -7,13 +7,13 @@ const Footer = () => {
 
       <footer className="py-5 border-top">
         <div className="row ms-4 me-4 d-flex justify-content-center">
-          <div className="col-6 col-md-2 mb-3">
+{/*           <div className="col-6 col-md-2 mb-3">
             <h5 className='text-light'>Secciones</h5>
             <ul className="nav flex-column ">
               <li className="nav-item mb-2 text-light">
-                <a href="#" className="nav-link p-0 link-warning text-light un">
+                <Link to="/#" className="nav-link p-0 link-warning text-light un">
                   Inicio
-                </a>
+                </Link>
               </li>
               <li className="nav-item mb-2">
                 <a href="#app" className="nav-link p-0 link-warning text-light">
@@ -31,12 +31,12 @@ const Footer = () => {
                 </a>
               </li>
               <li className="nav-item mb-2">
-                <a  href="/contacto" className="nav-link p-0 link-warning text-light">
+                <Link  to="/contacto" className="nav-link p-0 link-warning text-light">
                   Contacto
-                </a>
+                </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
           <div className="col-6 col-md-2 mb-3">
             <h5 className='text-light'>Legal</h5>
             <ul className="nav flex-column">
