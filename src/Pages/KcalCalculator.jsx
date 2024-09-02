@@ -5,6 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'
 import { useEffect } from 'react';
 import './links.scss'
+import { Link } from 'react-router-dom';
 export const KcalCalculator = () => {
   useEffect(() => {
     AOS.init({
@@ -34,7 +35,7 @@ export const KcalCalculator = () => {
         </Row>
         <div className="additional-calculator" >
           <h5 data-aos="fade-up">También puedes utilizar nuestra</h5>
-          <h1 data-aos="fade-up"><a href="/calculadoras/CalculadoraRm" id="style-1">Calculadora de RM</a> </h1>
+          <h1 data-aos="fade-up"><Link to="/calculadoras/CalculadoraRm" id="style-1">Calculadora de RM</Link> </h1>
         </div>
 
 
