@@ -37,7 +37,7 @@ const Footer = () => {
               </li>
             </ul>
           </div> */}
-          <div className="col-6 col-md-2 mb-3">
+          <div className="col-12 col-md-2 mb-3">
             <h5 className='text-light'>Legal</h5>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
@@ -68,7 +68,7 @@ const Footer = () => {
             <form>
               <h5 className='text-light'>Enterate antes que nadie de las novedades</h5>
               <p className='text-light body-emphasis'>Escribe tu mail aquí</p>
-              <div className="d-flex flex-column flex-sm-row w-100 gap-2">
+              <div className="d-flex flex-column flex-sm-row w-75 gap-2">
                 <label htmlFor="newsletter1" className="visually-hidden">
                   Email
                 </label>
