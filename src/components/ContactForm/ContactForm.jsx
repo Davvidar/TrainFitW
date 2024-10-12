@@ -22,12 +22,13 @@ const ContactForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('/api/contact', {
+      const body = { email: formData.email, suggestions: formData.name + ', ' + formData.message };
+      const response = await fetch('https://app.trainfit.net/api/users/suggestions', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(body),
       });
 
       if (response.ok) {

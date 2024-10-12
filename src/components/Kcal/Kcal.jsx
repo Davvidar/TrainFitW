@@ -39,9 +39,9 @@ const Kcal = () => {
         fatPercentage = 0.25;
         break;
       case '1.1': // Ganancia muscular
-        carbPercentage = 0.60;
+        carbPercentage = 0.55;
         proteinPercentage = 0.20;
-        fatPercentage = 0.20;
+        fatPercentage = 0.25;
         break;
       default:
         carbPercentage = 0.50;
@@ -124,7 +124,7 @@ const Kcal = () => {
             </div>
           </div>
 
-          {/* Edad, Altura y Peso en una línea */}
+        
           <div className="form-group flex-row">
             <div className="form-field">
               <label htmlFor="edad" className="form-label">
