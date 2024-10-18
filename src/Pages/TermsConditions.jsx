@@ -2,6 +2,7 @@ import React from 'react'
 import "../components/Animation.scss"
 
 import { Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const TermsConditions = () => {
     return (
@@ -107,11 +108,13 @@ const TermsConditions = () => {
                         <h6 className="m-2">7. Política de privacidad </h6>
 
                         <p className="m-2 fs-6" >Nuestra Política de Privacidad,
-                            disponible <a href="/politicas" className="text-warning">AQUÍ</a>,
+                            disponible <Link to="/politicas" className=" text-warning">AQUÍ</Link>,
                             explica cómo manejamos sus datos personales y protegemos su privacidad cuando utiliza
                             nuestra Aplicación.
                         </p>
-
+                        
+                  
+              
 
 
 
