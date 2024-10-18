@@ -11,6 +11,7 @@ import Politics from '../Pages/Politics';
 import AboutUs from '../Pages/AboutUs/AboutUs';
 import FaqsPage from '../Pages/FaqsPage';
 import NotFound from '../Pages/NotFound';
+import MorePage from '../Pages/MorePage';
 
 const router = createBrowserRouter([
 {
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
     {
       path: "/FAQs",
       element: <FaqsPage />,
+    },
+    {
+      path: "/Mas",
+      element: <MorePage />,
     },
     {
       path: "*",

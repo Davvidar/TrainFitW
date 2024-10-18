@@ -1,13 +1,55 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
+
 const Footer = () => {
+  const [formData, setFormData] = useState({
+    email: ''
+
+  });
+
+  const [status, setStatus] = useState('');
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const body = { email: formData.email  };
+      const response = await fetch('https://app.trainfit.net/api/users/suggestions', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(body),
+      });
+
+      if (response.ok) {
+        setStatus('Enviado.');
+        setFormData({
+          email: ''
+        });
+      } else {
+        setStatus('Error al enviar.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      setStatus('Error al enviar.');
+    }
+  };
   return (
     <>
 
       <footer className="py-5 border-top">
         <div className="row ms-4 me-4 d-flex justify-content-center">
-{/*           <div className="col-6 col-md-2 mb-3">
+          {/*           <div className="col-6 col-md-2 mb-3">
             <h5 className='text-light'>Secciones</h5>
             <ul className="nav flex-column ">
               <li className="nav-item mb-2 text-light">
@@ -42,7 +84,7 @@ const Footer = () => {
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
                 <Link to="/terminosycondiciones" className="nav-link p-0 link-warning text-light">
-                  Térmninos y condiciones
+                  Términos y condiciones
                 </Link>
               </li>
               <li className="nav-item mb-2">
@@ -65,28 +107,33 @@ const Footer = () => {
           </div>
 
           <div className="col-md-6 offset-md-1 mb-3">
-            <form>
-              <h5 className='text-light'>Enterate antes que nadie de las novedades</h5>
+            <form onSubmit={handleSubmit}>
+              <h5 className='text-light'>Entérate antes que nadie de las novedades</h5>
               <p className='text-light body-emphasis'>Escribe tu mail aquí</p>
               <div className="d-flex flex-column flex-sm-row w-75 gap-2">
                 <label htmlFor="newsletter1" className="visually-hidden">
                   Email
                 </label>
-                <input
-                  id="newsletter1"
-                  type="text"
+                <input   
+                 placeholder="Email "
                   className="form-control"
-                  placeholder="Email "
+                  type="email"
+                  id="newsletter1"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
                 />
-                <button className="btn btn-warning text-light" type="button">
+                <button className="btn btn-warning text-light" type="submit">
                   Subscribete
                 </button>
               </div>
+                {status && <p className="status">{status}</p>}
             </form>
           </div>
           <p className='ms-2 text-light d-flex justify-content-center'>© 2024 TrainFit, Inc. All rights reserved.</p>
         </div>
-       {/*  <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        {/*  <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
           <p className='ms-2 text-light'>© 2024 Company, Inc. All rights reserved.</p>
           <ul className="list-unstyled d-flex me-5">
             <li className="ms-3">

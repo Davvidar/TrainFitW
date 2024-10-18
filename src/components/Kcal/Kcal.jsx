@@ -14,11 +14,23 @@ const Kcal = () => {
   const [macros, setMacros] = useState(null);
   const [error, setError] = useState('');
 
+  // Modificación en la fórmula
   const getMifflinStJeorBySex = (peso, altura, edad, sexo) => {
-    if (sexo === 'hombre') {
-      return (10 * parseFloat(peso)) + (6.25 * parseFloat(altura)) - (5 * parseInt(edad)) + 5;
+    const imc = peso / ((altura / 100) ** 2); // Calcular IMC
+  
+    // Si el IMC es mayor o igual a 30, usar el peso ideal ajustado, de lo contrario usar el peso actual
+    let pesoFinal;
+    if (imc >= 30) {
+      const pesoIdeal = altura - 100; // Fórmula simplificada para peso ideal
+      pesoFinal = pesoIdeal + 0.4 * (peso - pesoIdeal); // Fórmula del peso ajustado
     } else {
-      return (10 * parseFloat(peso)) + (6.25 * parseFloat(altura)) - (5 * parseInt(edad)) - 161;
+      pesoFinal = peso;
+    }
+
+    if (sexo === 'hombre') { //Formula de Mifflin-St Jeor o Harris-Benedict en caso de la aplicación
+      return (10 * parseFloat(pesoFinal)) + (6.25 * parseFloat(altura)) - (5 * parseInt(edad)) + 5;
+    } else {
+      return (10 * parseFloat(pesoFinal)) + (6.25 * parseFloat(altura)) - (5 * parseInt(edad)) - 161;
     }
   };
 
@@ -89,7 +101,6 @@ const Kcal = () => {
   return (
     <div className="kcal-calculator-container">
       <div className="kcal-calculator">
-      
         <p>Introduce tus datos para calcular tus calorías y macronutrientes aproximados.</p>
       </div>
 
@@ -124,7 +135,6 @@ const Kcal = () => {
             </div>
           </div>
 
-        
           <div className="form-group flex-row">
             <div className="form-field">
               <label htmlFor="edad" className="form-label">
@@ -229,10 +239,11 @@ const Kcal = () => {
               required
             >
               <option value="">Selecciona una opción</option>
-              <option value="1">0</option>
-              <option value="1.02">1 o 2 días</option>
-              <option value="1.05">3 o 4 días</option>
-              <option value="1.07">5 o 6 días</option>
+              <option value="1">No entreno pesas</option>
+              <option value="1.05">1-2 días</option>
+              <option value="1.1">3-4 días</option>
+              <option value="1.15">5-6 días</option>
+              <option value="1.20">7 días</option>
             </select>
           </div>
 
@@ -249,9 +260,9 @@ const Kcal = () => {
               required
             >
               <option value="">Selecciona una opción</option>
-              <option value="0.9">Pérdida de grasa</option>
-              <option value="1">Mantenimiento</option>
-              <option value="1.1">Ganancia muscular</option>
+              <option value="0.9">Perder grasa</option>
+              <option value="1">Mantener peso</option>
+              <option value="1.1">Ganar músculo</option>
             </select>
           </div>
 
@@ -266,11 +277,11 @@ const Kcal = () => {
             <h3>Tus Kcal aproximadas son:</h3>
                <h1>  <strong className="text-light"> {finalResult} Kcal </strong></h1>
             {macros && (
-                <div className="macros m-2">
+                <div className="macros m-2 text-start">
                   <h4>Macronutrientes</h4>
-                <h4 className="text-primary">P: {parseInt(macros.protein)} g</h4>
-                <h4 className="text-success">HC: {parseInt(macros.carbs)} g</h4>
-                <h4 className="text-warning">G: {parseInt(macros.fat)} g</h4>
+                <h4 className="text-primary">Proteinas: {parseInt(macros.protein)} g</h4>
+                <h4 className="text-success">Carbohidratos: {parseInt(macros.carbs)} g</h4>
+                <h4 className="text-warning">Grasas: {parseInt(macros.fat)} g</h4>
                 
               </div>
             )}
