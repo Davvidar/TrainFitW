@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Kcal.css';
+import { ScrollRestoration } from "react-router-dom";
 
 const Kcal = () => {
   const [edad, setEdad] = useState('');
@@ -75,6 +76,7 @@ const Kcal = () => {
       fat: fatGrams.toFixed(2),
     };
   };
+
 
   const calculateKcalAndMacros = () => {
     if (edad && altura && peso && pasos && entrenamiento && objetivo && sexo) {
@@ -291,6 +293,7 @@ const Kcal = () => {
           </div>
         </form>
       </div>
+      <ScrollRestoration />
     </div>
   );
 };

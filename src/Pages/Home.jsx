@@ -98,6 +98,7 @@ export const Home = () => {
           <h1>Calculadoras</h1>
           <h5>También puedes hacer uso de nuestras calculadoras para medir tus calorías y tu repetición máxima</h5>
         </div>
+        
       </Container>
       <ImageZoom className="border" />
     </>

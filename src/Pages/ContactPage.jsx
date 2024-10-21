@@ -8,6 +8,7 @@ const ContactPage = () => {
 
 
       <ContactForm />
+      
     </Container>
   )
 }

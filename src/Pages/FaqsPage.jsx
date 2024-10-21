@@ -5,6 +5,7 @@ const FaqsPage = () => {
   return (
     <div>
         <Faqs />
+        
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Rm.css';
+import { ScrollRestoration } from 'react-router-dom';
 
 const Rm = () => {
   const [weight, setWeight] = useState('');
@@ -58,6 +59,7 @@ const Rm = () => {
         </form>
 
       </div>
+      <ScrollRestoration />
     </div>
   );
 }

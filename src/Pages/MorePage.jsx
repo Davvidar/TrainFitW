@@ -20,7 +20,7 @@ const MorePage = () => {
         </a>
 
         <a 
-          href="https://l.instagram.com/?u=https%3A%2F%2Ftestflight.apple.com%2Fjoin%2F6WnM77NZ&e=AT1Tu5BP0MeOrqc2aX0ozz9dpyHhEedCBGsHsMoHJt-HghcfxYFUPU8J1ORfTefd_cQd2glkdovoJ6pi9-zijJNfFglPKDlbOYmpV6k" 
+          href="https://testflight.apple.com/join/6WnM77NZ" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="action-button app-store"
@@ -82,6 +82,7 @@ const MorePage = () => {
           <span className="link-text">YouTube</span>
         </a>
       </div>
+      
     </div>
   );
 };

@@ -71,6 +71,7 @@ const AboutUs = () => {
         <p>Gracias por confiar en Trainfit.</p>
 
       </div>
+      
     </div>
   );
 };

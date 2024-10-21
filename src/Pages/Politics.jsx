@@ -257,6 +257,7 @@ const Politics = () => {
                     </div>
 
                 </div>
+                
     
     </Container>
   )

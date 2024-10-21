@@ -2,18 +2,10 @@ import React from 'react';
 import fondo from '../../assets/images/fondo.png';
 import fondo2 from '../../assets/images/fondo2.png';
 import './ImageZoom.css';
-import { Link, NavLink, useNavigate } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const ImageZoom = () => {
-  const navigate = useNavigate();
 
-  const handleButtonRm = () => {
-    navigate('/calculadoras/calculadoraRm');
-  };
-
-  const handleButtonKcal = () => {
-    navigate('/calculadoras/calculadoraKcal');
-  };
 
   return (
     <div className="image-zoom-div border">
