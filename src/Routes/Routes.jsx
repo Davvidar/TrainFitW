@@ -1,4 +1,5 @@
 import React from 'react';
+import { createHashRouter } from 'react-router-dom';
 import { createBrowserRouter } from 'react-router-dom';
 import { Root } from './Root';
 import { Home } from '../Pages/Home';
@@ -13,61 +14,58 @@ import FaqsPage from '../Pages/FaqsPage';
 import NotFound from '../Pages/NotFound';
 import MorePage from '../Pages/MorePage';
 
-const router = createBrowserRouter([
-{
-  path: "/",
-  element: <Root />,
-  children: [
-    {
-      path: "/",
-      element: <Home />,
-    },
-    {
-      path: "/calculadoras/CalculadoraKcal",
-      element: <KcalCalculator />,
-    },
-    {
-      path: "/calculadoras/CalculadoraRm",
-      element: <RmCalculator />,
-    },
-    {
-      path: "/contacto",
-      element: <ContactPage />,
-    },
-    {
-      path: "/calculadoras",
-      element: <CalculatorSelection />,
-    },
-    {
-      path: "/terminosycondiciones",
-      element: <TermsConditions />,
-    },
-    {
-      path: "/politicas",
-      element: <Politics />,
-    },
-    {
-      path: "/SobreNosotros",
-      element: <AboutUs />,
-    },
-    {
-      path: "/FAQs",
-      element: <FaqsPage />,
-    },
-    {
-      path: "/Mas",
-      element: <MorePage />,
-    },
-    {
-      path: "*",
-      element: <NotFound />,
-    }
-  ],
-}
+const router = createHashRouter([
+  {
+    path: "/",
+    element: <Root />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/calculadoras/CalculadoraKcal",
+        element: <KcalCalculator />,
+      },
+      {
+        path: "/calculadoras/CalculadoraRm",
+        element: <RmCalculator />,
+      },
+      {
+        path: "/contacto",
+        element: <ContactPage />,
+      },
+      {
+        path: "/calculadoras",
+        element: <CalculatorSelection />,
+      },
+      {
+        path: "/terminosycondiciones",
+        element: <TermsConditions />,
+      },
+      {
+        path: "/politicas",
+        element: <Politics />,
+      },
+      {
+        path: "/SobreNosotros",
+        element: <AboutUs />,
+      },
+      {
+        path: "/FAQs",
+        element: <FaqsPage />,
+      },
+      {
+        path: "/Mas",
+        element: <MorePage />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
+      }
+    ],
+  },
+]);
 
-
-
-
-])
 
 export default router;
