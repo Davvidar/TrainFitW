@@ -18,11 +18,38 @@ const ContactForm = () => {
     });
   };
 
+  const validateForm = () => {
+    const { email, name, message } = formData;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Expresión regular para validar el email
+
+    if (!name || !email || !message) {
+      setStatus('Todos los campos son obligatorios.');
+      return false;
+    }
+
+    if (!emailRegex.test(email)) {
+      setStatus('Por favor, ingrese un correo electrónico válido.');
+      return false;
+    }
+
+    return true;
+  };
+
+  const sanitizeInput = (input) => {
+    return input.replace(/<\/?[^>]+(>|$)/g, ""); // Elimina etiquetas HTML
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    if (!validateForm()) return; // Validar antes de continuar
+
     try {
-      const body = { email: formData.email, suggestions: formData.name + ', ' + formData.message };
+      const body = {
+        email: sanitizeInput(formData.email),
+        suggestions: `${sanitizeInput(formData.name)}, ${sanitizeInput(formData.message)}`,
+      };
+
       const response = await fetch('https://app.trainfit.net/api/users/suggestions', {
         method: 'POST',
         headers: {
@@ -39,11 +66,11 @@ const ContactForm = () => {
           message: '',
         });
       } else {
-        setStatus('Error al enviar el mensaje.');
+        setStatus('Error al enviar el mensaje. Inténtalo de nuevo más tarde.');
       }
     } catch (error) {
       console.error('Error:', error);
-      setStatus('Error al enviar el mensaje.');
+      setStatus('Error al enviar el mensaje. Por favor, verifica tu conexión a Internet.');
     }
   };
 
