@@ -125,7 +125,7 @@ const Footer = () => {
                   required
                 />
                 <button className="btn btn-warning text-light" type="submit">
-                  Subscribete
+                  Subscríbete
                 </button>
               </div>
                 {status && <p className="status">{status}</p>}
